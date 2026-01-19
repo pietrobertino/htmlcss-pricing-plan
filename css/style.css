@@ -87,16 +87,17 @@ main {
     .cards {
         display: flex;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 1.5rem;
         
         .card {
             padding: 1rem;
             border-radius: 1rem;
             box-shadow: 0 4px 2px lightgray ;
-            flex-basis: calc(100%/3 - (16px*2) / 3);
+            flex-basis: calc(100%/3 - (1.5rem*2) / 3);
             flex-shrink: 0;
-            min-width: 565px;
-            /* margin: 0 auto; */
+            min-width: 350px;
+            flex-grow: 1;
+            
             
     
             .subtitle {
@@ -160,6 +161,10 @@ main {
             background-color: var(--site-purple);
             color: white;
 
+            .subtitle, .price span {
+                color: white;
+            }
+
             .discount {
                 span {
                     color: black;
@@ -169,6 +174,21 @@ main {
             .choose-btn {
                 background-color: white;
                 color: var(--site-purple);
+            }
+        }
+
+        .card:last-child {
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+
+                li {
+                    flex-shrink: 0;
+                    flex-basis: calc(100%/2 - 0.5rem);
+                    min-width: 45%;
+                }
             }
         }
     }
