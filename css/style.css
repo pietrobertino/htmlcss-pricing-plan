@@ -79,3 +79,16 @@ body {
     }
 
 }
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+
+    .card {
+        padding: 1rem;
+        border-radius: 1rem;
+        flex-shrink: 0;
+        flex-grow: 1;
+
+    }
+}
