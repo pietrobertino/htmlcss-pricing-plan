@@ -1,0 +1,20 @@
+
+/* #region common */
+:root {
+    --site-purple:#6500ff;
+    --site-gray:#e3e3e3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    min-width: 512px;
+}
+
+/* #endregion common */
+
